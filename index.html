@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WildVerse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <p>WildVerse</p>
+            <div class="battery-status">50%</div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab-button active" onclick="openTab('tasks')">Tasks</button>
+            <button class="tab-button" onclick="openTab('markets')">Markets</button>
+            <button class="tab-button" onclick="openTab('friends')">Friends</button>
+            <button class="tab-button" onclick="openTab('wallet')">Wallet</button>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Tasks Tab -->
+            <div id="tasks" class="tab-content active">
+                <h2>Tasks</h2>
+                <div class="task">
+                    <p>Invite 10 friends</p>
+                    <span>+250 WILD</span>
+                    <button class="start-btn">Start</button>
+                </div>
+                <div class="task">
+                    <p>Invite 100 friends</p>
+                    <span>+2,500 WILD</span>
+                    <button class="start-btn">Start</button>
+                </div>
+                <div class="task">
+                    <p>Invite 1,000 friends</p>
+                    <span>+25,000 WILD</span>
+                    <button class="start-btn">Start</button>
+                </div>
+            </div>
+
+            <!-- Markets Tab -->
+            <div id="markets" class="tab-content">
+                <h2>Markets</h2>
+                <p>Market information will be available here.</p>
+            </div>
+
+            <!-- Friends Tab -->
+            <div id="friends" class="tab-content">
+                <h2>Friends</h2>
+                <p>Invite and track your friends here.</p>
+            </div>
+
+            <!-- Wallet Tab -->
+            <div id="wallet" class="tab-content">
+                <h2>Wallet</h2>
+                <p>Your rewards and balance will appear here.</p>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="bottom-bar">
+            <button class="bottom-button">Home</button>
+            <button class="bottom-button">Tasks</button>
+            <button class="bottom-button">Markets</button>
+            <button class="bottom-button">Friends</button>
+            <button class="bottom-button">Wallet</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
